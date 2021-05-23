@@ -1,6 +1,6 @@
 {
   "name": "next-sidebar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight Sidebar Admin menu for Bootstrap Application, compatible with BS4 & BS5",
   "main": "gulpfile.js",
   "scripts": {
@@ -30,6 +30,9 @@
     "navigation",
     "navigation menu"
   ],
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
   "author": "Nelh Amstrong",
   "liscence": "MIT",
   "repository": {
