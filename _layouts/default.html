@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>next-sidebar</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/next-sidebar.css">
+</head>
+    
+<body class="app is-collapsed">
+    {% include _sidebar.html %}
+    <div class="container-wide">
+        {% include _navbar.html %}
+        {{ content }}
+    </div>
+    
+    <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>  
+    <script src="{{ site.baseurl }}/assets/js/popper.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>  
+    <script src="{{ site.baseurl }}/assets/js/perfect-scrollbar.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/all.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/next-sidebar.js"></script>
+</body>
+</html>

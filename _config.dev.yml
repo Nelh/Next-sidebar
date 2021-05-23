@@ -1,0 +1,3 @@
+# The dev config will default the base url to localhost:3000 if it's used make sure to change it here
+url: 'http://localhost:3000'
+baseurl: 'http://localhost:3000'
