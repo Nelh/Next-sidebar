@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#">
-    <img src="./assets/images/next-full.png">
+    <img src="https://raw.githubusercontent.com/Nelh/Next-sidebar/HEAD/assets/images/next-full.png">
   </a>
 </p>
 
@@ -9,11 +9,15 @@
 <p align="center">Minimalistic but perfect Sidebar Menu for your Admin Application (Built with bootstrap)<p>
 
 <p align="center">	
+  <a href="https://img.shields.io/npm/dt/next-sidebar">
+  <img alt="npm" src="https://img.shields.io/npm/dt/next-sidebar" alt="downoad"></a>
   <a href="https://github.com/Nelh/Next-sidebar/blob/main/LICENSE">
   <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>	
   <a href="https://badge.fury.io/js/next-sidebar">
   <img src="https://badge.fury.io/js/next-sidebar.svg" alt="npm"></a>	
 </p>
+
+<p align="center"><a href="https://nodei.co/npm/next-sidebar/"><img src="https://nodei.co/npm/next-sidebar.png?downloads=true&downloadRank=true&stars=true"></a></p>
 
 ## Demo
 
