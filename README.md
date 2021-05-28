@@ -10,7 +10,7 @@
 
 <p align="center">	
   <a href="https://img.shields.io/npm/dt/next-sidebar">
-  <img alt="npm" src="https://img.shields.io/npm/dt/next-sidebar" alt="downoad"></a>
+  <img src="https://img.shields.io/npm/dt/next-sidebar" alt="downoad"></a>
   <a href="https://github.com/Nelh/Next-sidebar/blob/main/LICENSE">
   <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>	
   <a href="https://badge.fury.io/js/next-sidebar">

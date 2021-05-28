@@ -32,6 +32,9 @@
   }
 }
 
+a {
+  text-decoration: none;
+}
 
 // Sidebar
 // ---------------------------------------------------------
@@ -376,11 +379,11 @@
                 opacity: 0;
               }
 
-              &.open {
-                ul.dropdown-menu {
-                  display: none !important;
-                }
-              }
+              // &.open {
+              //   ul.dropdown-menu {
+              //     display: none !important;
+              //   }
+              // }
             }
           }
         }
