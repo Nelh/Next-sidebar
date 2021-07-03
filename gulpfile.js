@@ -2,13 +2,13 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const prefix = require('autoprefixer');
-const cp = require('child_process');
+// const cp = require('child_process');
 const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
+const spawn = require('cross-spawn');
 
 const env = process.env.NODE_ENV || 'prod';
 const processors = [prefix(),cssnano];
-const jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 const messages = { 
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build',
 };
@@ -32,16 +32,16 @@ var paths = {
 function jekyllBuild() {
   browserSync.notify(messages.jekyllBuild);
   if (env === 'prod') {
-    return cp.spawn(jekyll, ['build', '--config', '_config.yml'], { stdio: 'inherit' });
+    return spawn('jekyll', ['build', '--config', '_config.yml'], { stdio: 'inherit' });
   } else {
-    return cp.spawn(jekyll, ['build', '--config', '_config.yml,_config.dev.yml'],{ stdio: 'inherit' });
+    return spawn('jekyll', ['build', '--config', '_config.yml,_config.dev.yml'], { stdio: 'inherit' });
   }
 }
 
 function style() {
   return gulp
     .src(paths.styles.src)
-    .pipe(sass({includePaths: ['scss', 'node_modules'],onError: browserSync.notify}))
+    .pipe(sass({includePaths: ['scss', 'css', 'node_modules'],onError: browserSync.notify}))
     .pipe(postcss(processors))
     .pipe(gulp.dest(paths.styles.dest))
     .pipe(gulp.dest(paths.styles.destsecond))
